@@ -18,12 +18,12 @@
         border-collapse: separate;
         font-family: Calibri,serif;
         width: 100%;
+        height:100%;
     }
 
     .header
     {
         font-size: xx-large;
-        height: 50%;
         background-color: coral;
     }
     a
@@ -32,26 +32,32 @@
     }
     .middle
     {
-        height: auto;
+        height: 1024px;
         background-color: white;
     }
     .bottom
     {
         background-color: lightgreen;
     }
+    iframe
+    {
+        height: 1024px;
+        width: 100%;
+    }
+
 </style>
 <body>
 <table>
     <tr class="header">
-        <th><a href="index.html" target="">Home</a></th>
-        <th>Salary</th>
-        <th>Chessboard</th>
-        <th>Chinese Chessboard</th>
-        <th>FAQ</th>
+        <th><a href="index.html" target="mini_display">Home</a></th>
+        <th><a href=" salary.html" target="mini_display">Salary</a></th>
+        <th><a href="chessboard.html" target="mini_display">Chessboard</a></th>
+        <th><a href="https://variety.com/wp-content/uploads/2021/07/Rick-Astley-Never-Gonna-Give-You-Up.png?w=681&h=383&crop=1" target="mini_display">Chinese Chessboard</a></th>
+        <th><a href="https://www.zappos.com/general-" target="mini_display">FAQ</a> </th>
     </tr>
     <tr class="middle" id="to_target">
         <td colspan="5">
-            <iframe src="index.html" width="100%"></iframe>
+            <iframe name="mini_display" width="100%"></iframe>
         </td>
     </tr>
     <tr class="bottom">
